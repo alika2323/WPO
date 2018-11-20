@@ -1,0 +1,211 @@
+/*   Medidas de pantallas estandar:   1024, 768, 480, 320.  */
+
+@media screen and (max-width: 1023px){
+	.container{
+		padding: 0 1em;
+	}
+
+
+	.hero{
+		height: auto;
+		position: relative;
+		overflow: hidden;
+		padding: 2em;
+	}
+
+
+	.hero-image{
+		position: absolute;
+		z-index: 1;
+		left:0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+	}
+
+
+	.hero h1{
+		font-size: 2em;
+		z-index: 2;
+	}
+
+	.portfolio{
+		padding: 0;
+
+	}
+
+
+}
+
+
+@media screen and (max-width: 767px){
+
+	.h2{
+		font-size: 1.2em;
+		margin: .5em 0;
+	}
+
+
+	.header{
+		display: block;
+		height: auto;
+	}
+
+	.menu{
+		position: fixed;
+		background-color: rgba(5,111,255,.9);
+		z-index:3;
+		top: 0;
+		left: -100vw;
+		width: 100vw;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 280px;
+		padding-top: 2em;
+		transition: .3s;
+	}
+
+
+	.menu.isactive{
+		left:0;
+	}
+
+	.header a{
+		justify-content: center;
+		height: 40px;
+		font-size: 2em;
+		text-decoration: underline;
+		margin-bottom: .5em;
+
+	}
+
+	.menu ol{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.header .logo{
+		text-align: center;
+	}
+
+
+
+	.project{
+		display: block;
+	}
+
+	.project-details,
+	.project-imageContainer{
+		width: auto;
+	}
+
+	.project-details{
+		font-size: 14px;
+
+	}
+	
+
+	.project-title{
+		font-size: 1.5em;
+		margin-bottom: .3em;
+	}
+
+	.project-url{
+		font-size: 1em;
+	}
+
+	.project-curs{
+		font-size: .7em;
+	}
+
+	.project-date{
+		font-size: 1em;
+	}
+
+	.project-description{
+		font-size: 1em;
+		asdkasgdk		
+	}
+
+	.project-curse, 
+	.project-date, 
+	.project-url
+	{
+		margin: .3em 0;
+	}
+	.btn-burger{
+		display: flex;
+	}
+}
+
+
+@media screen and (max-width: 480px){
+	h1{
+		font-size: 1.5em;
+	}
+
+	.event{
+		width: auto;
+		flex-shrink: initial;
+	}
+
+	.event-details{
+		margin: -2em .5em .5em;
+		padding: 1em;
+	}
+
+
+
+	.contact{
+		height: auto;
+		padding: 1.5em 0;
+		text-align: center;
+		display: block;
+
+	}
+
+	.contact-form button{
+		margin: 1em auto;
+	}
+
+	.contact-form h3{
+		margin-top: 0;
+	}
+
+	.footer	{
+		display: block;
+		text-align: center;
+		border: 1px solid transparent;
+	}
+
+
+
+
+
+}
+
+@media screen and (max-width: 320px){
+	h1{
+		font-size: 1.2em;
+		background: rgba(0,0,0,.5);
+
+	}
+
+	.hero{
+		padding: 2em 1em;
+	}
+
+	.redes-url{
+		width: 40px;
+		height: 40px;
+		background-size: 100%;	
+	}
+
+}
+
+
+
+

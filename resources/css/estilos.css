@@ -1,0 +1,430 @@
+
+/* ICONOS CON FUENTES */
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../fonts/icomoon.eot?rskqeo');
+	src:  url('../fonts/icomoon.eot?rskqeo#iefix') format('embedded-opentype'),
+	url('../fonts/icomoon.ttf?rskqeo') format('truetype'),
+	url('../fonts/icomoon.woff?rskqeo') format('woff'),
+	url('../fonts/icomoon.svg?rskqeo#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram:before {
+	content: "\e901";
+}
+.icon-github:before {
+	content: "\e902";
+}
+.icon-twitter:before {
+	content: "\e903";
+}
+.icon-facebook:before {
+	content: "\e904";
+}
+.icon-menu:before {
+	content: "\e900";
+}
+
+
+/*    GENERALES      */
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: normal;
+}
+
+
+h1{
+	font-size: 40px;
+	line-height: 150%;
+	letter-spacing: -1px;
+	color: white;
+	margin: 0;
+}
+
+
+h1 strong{
+	color:  #026fff;
+}
+
+
+h2{
+	color:  #026fff;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+figure{
+	margin:0;
+}
+
+
+
+
+/*    HEADER      */
+
+.header{
+	background-color: #1d252c;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+
+.menu{
+	height: inherit;
+}
+
+
+.header ol, .header ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.header a{
+	color: white;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	height: inherit;
+	padding: 0 10px;
+}
+
+
+.header ol{
+	display: flex;
+	height: inherit;
+}
+
+
+.header ol li{
+	height: inherit;
+}
+
+
+
+
+
+
+/*    HERO      */
+
+.hero{
+	height: 300px;
+	/*background-image: url('../../resources/images/hero.jpg');*/
+	background-color: #1d252c;
+	background-size: 500px 300px;
+	background-repeat: no-repeat;
+	background-position:right;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+
+.hero-image{
+	object-fit: cover;
+}
+
+
+/*    PORTAFOLIO      */
+
+.portfolio{
+	background-color: #fafafa;
+	padding: 20px;
+}
+
+
+.project{
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	padding: 20px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow:  3px 5px 3px #888888;
+	flex-wrap: wrap;
+}
+
+.project strong{
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.project-title{
+	font-size: 30px;
+	margin-top: 0px;
+	margin-bottom: : 10px;
+}
+
+.project-description{
+	font-size: 20px;
+}
+
+.project-curse,
+.project-date,
+.project-url{
+	margin: 10px 0;
+}
+
+.project-details,
+.project-imageContainer
+{
+	width: 50%;
+}
+
+.project-imageContainer img{
+	max-width: 100%;
+}
+
+
+
+/*    EVENTOS      */
+
+.event{
+	margin: 1%;
+	width: 48%;
+	flex-shrink: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	background: #f4fbff;
+}
+
+.eventList{
+	display: flex;	
+	flex-wrap: wrap;	
+}
+
+.eventList-title{
+	margin-left: 20px;
+}
+
+
+.event img{
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+
+.event-details{
+	margin: 20px 40px;
+	margin-top: -40px;
+	margin-left: 10px;
+	background-color: white;
+	position: relative;
+	padding: 20px;
+	text-align: center;
+}
+
+.event-description{
+	text-align: left;
+}
+
+
+.event-url{
+	color: #056fff;
+	border: 1px solid;
+	padding: 5px 20px;
+	text-decoration:none;
+	border-radius: 5px;
+}
+
+
+
+/*    FORMULARIO CONTACTO     */
+
+.contact{
+	background-color: #056fff;
+	color: white;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+.redes-url{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0 10px;
+	background-size: 50px 50px;
+	text-decoration: none;
+
+}
+
+
+/* incorporar iconos desde url*/
+/*.redes-url.twitter{
+	background-image: url('../images/twitter.svg');
+}
+
+
+.redes-url.facebook{
+	background-image: url('../images/facebook.svg');
+}
+
+
+.redes-url.github{
+	background-image: url('../images/github.svg');
+}
+
+.redes-url.instagram{
+	background-image: url('../images/instagram.svg');
+}
+*/
+
+/* iconos con fuente IcoMoon*/
+
+.redes i{
+	color:white;
+	font-size: 3em;
+}
+
+
+
+
+
+
+
+.contact-form input{
+	border-color: gray;
+	border-style: solid;
+	border-radius: 5px;
+	padding: 5px 30px;
+	background-image: url('../images/envelope.svg');
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position-y: center;
+	background-position-x: 5px;
+}
+
+
+.contact-form button{
+	display: block; 
+	margin-top: 10px;
+	background: transparent;
+	color: white;
+	padding: 5px 30px;
+	border-radius: 5px;
+	width: 100px;
+	margin: 10px auto 0;
+}
+
+
+.contact-form h3{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/*    FOOTER      */
+
+.footer{
+	background-color: #1b2127;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.footer img{
+	vertical-align: middle;
+}
+
+.footer a{
+	color: white;
+}
+
+
+.container{
+	/*border: 2px solid red;*/
+	max-width: 1000px;
+	flex:1;
+	margin: 0 auto;
+	display: inherit;
+	justify-content: inherit;
+	align-items: inherit;
+	height: inherit;
+	flex-wrap: inherit;
+}
+
+
+.html-video{
+	width: 100%;
+	height: auto;
+}
+
+.flexible-video{
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;
+	background: pink;
+	position: relative;
+}
+
+.video-youtube{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left:0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.btn-burger{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,.8);
+	display: block;
+	color: white;
+	font-size: 2em;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	z-index: 4;
+	left: 5px;
+	top:5px;
+
+
+
+}
+
